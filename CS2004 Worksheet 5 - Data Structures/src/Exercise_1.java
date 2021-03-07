@@ -1,11 +1,12 @@
-package Exercise_1;
 
-public class ILoveCS2004 {
+public class Exercise_1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.out.println("I love CS2004!");
+		Data x = new Data("Fred", 41);
+		x.Print();
+		
 	}
 
 }
