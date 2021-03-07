@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.LinkedList;
 
 public class Exercise_2 {
 	
@@ -44,6 +45,7 @@ public class Exercise_2 {
 		// TODO Auto-generated method stub
 		
 		// Creating ArrayList called array
+		System.out.println("Using ArrayList to display Data \n");
 		ArrayList<Data> array = new ArrayList<Data>();
 		
 		// Creating Objects
@@ -57,19 +59,36 @@ public class Exercise_2 {
 		array.add(member3);
 		
 		// Printing all the members
+		System.out.println("Printing all the members");
 		PrintCollection(array);
 		System.out.println();
 		
 		// Adding Harry aged 78 between Jo and Zoe
+		System.out.println("Adding Harry aged 78 between Jo and Zoe");
 		Data member = new Data("Hary", 78);
 		array.add(2, member);
 		PrintCollection(array);
-		
-		
-		
+		System.out.println();
 		
 		
 		// Creating LinkedList called array1
+		System.out.println("Using LinkedList to display the Data \n");
+		LinkedList<Data> array1 = new LinkedList<Data>();
+		
+		// Adding Objects to array1
+		array1.add(member1);
+		array1.add(member2);
+		array1.add(member3);
+		
+		// Printing all the members
+		System.out.println("Printing all the members");
+		PrintCollection(array1);
+		System.out.println();
+		
+		// Adding Harry aged 78 between Jo and Zoe
+		System.out.println("Adding Harry aged 78 between Jo and Zoe");
+		array1.add(2, member);
+		PrintCollection(array1);
 		
 	}
 
